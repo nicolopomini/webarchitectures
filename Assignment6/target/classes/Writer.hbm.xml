@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "it.unitn.disi.webarch.ass6.models.Writer" table = "writer">
+      
+      <meta attribute = "class-description">
+         This class contains the writer detail. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <set name = "books" cascade="all">
+         <key column = "author"/>
+         <one-to-many class="it.unitn.disi.webarch.ass6.models.Book"/>
+      </set>
+      
+      <property name = "name" column = "name" type = "string"/>
+      <property name = "surname" column = "surname" type = "string"/>
+      
+   </class>
+
+   <class name = "it.unitn.disi.webarch.ass6.models.Book" table = "book">
+      
+      <meta attribute = "class-description">
+         This class contains the books. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "title" column = "title" type = "string"/>
+      <property name = "publicationYear" column = "publicationYear" type = "int"/>
+      
+   </class>
+
+</hibernate-mapping>

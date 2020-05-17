@@ -1,0 +1,15 @@
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/entities/Student.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/dao/ProfessorDAO.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/entities/Course.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/entities/EnrolledId.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/beans/CourseBean.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/dao/StudentDAO.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/entities/Professor.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/beans/ExamBean.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/dao/CourseDAO.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/entities/Person.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/beans/StudentBean.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/dao/ExamDAO.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/entities/Enrolled.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/entities/Exam.java
+/Users/pomo/NetBeansProjects/Assignment7Server/Assignment7Server-ejb/src/main/java/it/unitn/disi/webarch/ass7/server/beans/ProfessorBean.java

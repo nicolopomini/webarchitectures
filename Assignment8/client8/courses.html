@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<title>Course mangement</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nicolò Pomini">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="students.html">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="professors.html">Professors</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="exams.html">Exams</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+    	<div id="message"></div>
+	    <h2>All the courses:</h2>
+	    Click on the corresponding row to have more information about a course.
+	    <table class="table">
+	    	<thead>
+	    		<th scope="col">Course ID</th>
+	  			<th scope="col">Name</th>
+	      		<th scope="col">#Students enrolled</th>
+	    	</thead>
+	    	<tbody id="allcourses">
+	    	</tbody>
+	    </table>
+	    <br/>
+	    <h2>Insert a new Course</h2>
+	    <form>
+		  <div class="form-group">
+		    <label for="courseName">Name</label>
+		    <input type="text" class="form-control" id="courseName" placeholder="Name of the course" name="name" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="profInsertForm">Professor</label>
+		    <select class="form-control" id="profInsertForm" name="professor"></select>
+		  </div>
+		  <button type="button" class="btn btn-primary" id="submitInsert">Submit</button>
+		</form>
+		<br/>
+
+		<h2>Enroll a student to a course</h2>
+	    <form>
+		  <div class="form-group">
+		    <label for="enrollCourse">Select a course</label>
+		    <select class="form-control" id="enrollCourse" name="course"></select>
+		  </div>
+		  <div class="form-group">
+		    <label for="enrollStudent">Select a student to enroll</label>
+		    <select class="form-control" id="enrollStudent" name="student"></select>
+		  </div>
+		  <button type="button" class="btn btn-primary" id="submitEnroll">Submit</button>
+		</form>
+		<br/>
+	</main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Nicol&ograve; Pomini, 203319</span>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+	<div class="modal fade bd-example-modal-lg" id="courseDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="courseDetailTitle">Loading...</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body" id="courseDetailBody">
+	      	...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/courses.js"></script>
+	<script type="text/javascript">loadCourses();loadInsertForm();loadEnrollForm();</script>
+</body>
+</html>

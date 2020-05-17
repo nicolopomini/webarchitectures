@@ -1,0 +1,15 @@
+it/unitn/disi/webarch/ass7/server/beans/ProfessorBean.class
+it/unitn/disi/webarch/ass7/server/dao/ExamDAO.class
+it/unitn/disi/webarch/ass7/server/entities/Professor.class
+it/unitn/disi/webarch/ass7/server/dao/CourseDAO.class
+it/unitn/disi/webarch/ass7/server/beans/ExamBean.class
+it/unitn/disi/webarch/ass7/server/entities/Enrolled.class
+it/unitn/disi/webarch/ass7/server/entities/Student.class
+it/unitn/disi/webarch/ass7/server/entities/Course.class
+it/unitn/disi/webarch/ass7/server/entities/EnrolledId.class
+it/unitn/disi/webarch/ass7/server/entities/Exam.class
+it/unitn/disi/webarch/ass7/server/dao/StudentDAO.class
+it/unitn/disi/webarch/ass7/server/beans/CourseBean.class
+it/unitn/disi/webarch/ass7/server/dao/ProfessorDAO.class
+it/unitn/disi/webarch/ass7/server/entities/Person.class
+it/unitn/disi/webarch/ass7/server/beans/StudentBean.class
